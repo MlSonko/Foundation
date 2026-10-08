@@ -1,10 +1,10 @@
-/* ===== Theme: change these values to re-brand the whole site ===== */
+
 :root {
-    --brand: #2e7d4f;        /* main colour (buttons, links, accents) */
-    --brand-dark: #1f5937;   /* hover + footer */
-    --brand-soft: #eef5f0;   /* light section background */
-    --ink: #1d2a24;          /* headings */
-    --muted: #5d6b63;        /* body text */
+    --brand: #2e7d4f;        
+    --brand-dark: #1f5937;   
+    --brand-soft: #eef5f0;   
+    --ink: #1d2a24;         
+    --muted: #5d6b63;       
 }
 html { scroll-behavior: smooth; }
 body { padding-top: 100px; } /* fallback before the script runs */
@@ -76,6 +76,14 @@ img { max-width: 100%; }
 
 @media (max-width: 575.98px) {
     .section { padding: 2.75rem 0; }
+
+
+    
+.navbar-toggler { border: 2px solid var(--brand); padding: .35rem .6rem; }
+.navbar-toggler:focus { box-shadow: 0 0 0 .2rem rgba(46, 125, 79, .25); }
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%232e7d4f' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
     .hero { min-height: 440px; }
     .hero .btn { width: 100%; margin-bottom: .5rem; }
 }
