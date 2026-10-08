@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | ORGANISATION NAME</title>
+    <meta name="description" content="PLACEHOLDER: short description of the organisation (150 characters).">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER: top bar + navbar, fixed to the top of the screen -->
+    <header class="site-header">
+    <div class="topbar py-2 d-none d-md-block">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <a href="mailto:info@example.org">info@example.org</a>
+            <span>
+                <a href="#" class="me-3">Facebook</a><a href="#" class="me-3">LinkedIn</a><a href="#">X</a>
+            </span>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">ORGANISATION NAME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html#service-1">Service One</a></li>
+                            <li><a class="dropdown-item" href="services.html#service-2">Service Two</a></li>
+                            <li><a class="dropdown-item" href="services.html#service-3">Service Three</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programmes</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="programmes.html#farming">Farming &amp; Agriculture</a></li>
+                            <li><a class="dropdown-item" href="programmes.html#community">Community Development</a></li>
+                            <li><a class="dropdown-item" href="programmes.html#training">Training &amp; Capacity Building</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Network</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="network.html#partners">Partners</a></li>
+                            <li><a class="dropdown-item" href="network.html#associates">Associates</a></li>
+                            <li><a class="dropdown-item" href="network.html#team">Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="resources.html#publications">Publications</a></li>
+                            <li><a class="dropdown-item" href="resources.html#updates">Updates</a></li>
+                            <li><a class="dropdown-item" href="resources.html#gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-lg-2"><a class="btn btn-brand btn-sm mt-2 mt-lg-0" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 mt-2">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="row g-4 g-lg-5">
+                <div class="col-12 col-md-5">
+                    <h2 class="h3">Get In Touch</h2>
+                    <p>PLACEHOLDER: short intro sentence.</p>
+                    <p class="mb-1"><b>Address</b><br>PLACEHOLDER: Street, City, Country</p>
+                    <p class="mb-1 mt-3"><b>Email</b><br><a href="mailto:info@example.org">info@example.org</a></p>
+                    <p class="mb-3 mt-3"><b>Phone</b><br>+000 000 0000</p>
+                    <div class="ratio ratio-4x3"><div class="ph-img">Map placeholder (Google Maps embed)</div></div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="card card-box"><div class="card-body p-4">
+                        <h2 class="h4 mb-3">Send Us A Message</h2>
+                        <!-- Replace action="#" with a form service (e.g. Formspree) so messages reach your inbox -->
+                        <form action="#" method="post">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject" name="subject">
+                                        <option>General enquiry</option>
+                                        <option>Partnership</option>
+                                        <option>Programmes</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-brand">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-12 col-md-5">
+                    <h5>ORGANISATION NAME</h5>
+                    <p>PLACEHOLDER: one or two sentences describing the organisation.</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="programmes.html">Programmes</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>PLACEHOLDER: Street address, City, Country</li>
+                        <li><a href="mailto:info@example.org">info@example.org</a></li>
+                        <li>+000 000 0000</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="d-flex flex-wrap justify-content-between gap-2 small">
+                <span>&copy; 2026 ORGANISATION NAME. All rights reserved.</span>
+                <span><a href="#">Privacy Policy</a> &middot; <a href="#">Terms &amp; Conditions</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Keeps page content clear of the fixed header, whatever its height
+        (function () {
+            var header = document.querySelector('.site-header');
+            function fit() {
+                document.body.style.paddingTop = header.offsetHeight + 'px';
+                document.documentElement.style.scrollPaddingTop = header.offsetHeight + 'px';
+            }
+            window.addEventListener('load', fit);
+            window.addEventListener('resize', fit);
+            fit();
+        })();
+    </script>
+</body>
+</html>
